@@ -1,5 +1,5 @@
 # tab-bound
-This Firefox extension enforces a limit on the number of tabs in a window (configurable through the `conf.json` file's `n_tabs_max` field (reload needed)). I created this app to help me stay focused and productive while also helping my PCs RAM.
+This Firefox extension enforces a limit on the number of tabs in a window (configurable through the extension's `Preferences` page). I created this app to help me stay focused and productive while also helping my PCs RAM.
 Please use this extension with caution as I have zero experience with Firefox extension development and hold no standards regarding safety, security or "correctness".
 
 

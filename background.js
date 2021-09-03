@@ -1,16 +1,14 @@
 console.log("background script started")
 
-let requestURL = './conf.json';
-let request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = () => {
+const DEF_N_TABS_MAX = 10;
+const DEF_ACTIVE = true;
+
+browser.storage.sync.get().then((result) => {
     browser.storage.sync.set({
-        n_tabs_max: request.response.n_tabs_max,
-        active: true // Default is active
+        n_tabs_max: result.n_tabs_max || DEF_N_TABS_MAX,
+        active: result.active || DEF_ACTIVE
     });
-}
+});
 
 // Tab num change listeners
 browser.tabs.onCreated.addListener((t) => {
