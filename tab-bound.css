@@ -1,0 +1,18 @@
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    background-color: #1c1b22;
+}
+  
+.hidden{
+    display: none;
+}
+  
+p{
+    color: white;
+    margin: 3% auto;
+}
+
+#status{
+    color: greenyellow;
+}  

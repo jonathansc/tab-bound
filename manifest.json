@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "tab-bound",
+    "version": "1.0",
+    "description": "Enforces a bound on the number of tabs.",
+    "icons": {
+        "32": "icons/tb32.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "icons/tb32.png",
+        "default_title": "tab-bound",
+        "default_popup": "tab-bound.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "not-a-valid-id@example.com"
+        }
+    }
+}
