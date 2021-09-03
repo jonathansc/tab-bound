@@ -20,7 +20,7 @@ jobs:
         uses: kewisch/action-web-ext@v1
         with:
           cmd: build
-          source: src
+          source: .
 
       - name: "Upload Artifact"
         uses: actions/upload-artifact@master
