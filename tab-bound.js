@@ -4,10 +4,8 @@ function get_tabs() {
 
 function update_n_tabs() {
     get_tabs().then((tabs) => {
-        // Tab num
         document.getElementById("n_tabs").innerHTML = tabs.length;
 
-        // Status color
         browser.storage.sync.get("n_tabs_max").then((result) => {
             if (tabs.length >= result.n_tabs_max) {
                 document.getElementById("status").style.color = color_red;
@@ -21,7 +19,6 @@ function update_n_tabs() {
 let color_green = "greenyellow";
 let color_red = "red";
 
-// Init
 browser.storage.sync.get("n_tabs_max").then((result) => {
     document.getElementById("n_tabs_max").innerHTML = result.n_tabs_max;
 });
