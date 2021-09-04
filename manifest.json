@@ -20,11 +20,6 @@
         "default_title": "tab-bound",
         "default_popup": "tab-bound.html"
     },
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "not-a-valid-id@example.com"
-        }
-    },
     "options_ui": {
         "page": "options/options.html"
     }

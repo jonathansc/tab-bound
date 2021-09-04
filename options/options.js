@@ -1,6 +1,6 @@
 function save_options(e) {
     e.preventDefault();
-    browser.storage.sync.set({
+    browser.storage.local.set({
         n_tabs_max: document.getElementById("n_tabs_max-input").value
     });
 }
@@ -10,7 +10,7 @@ function restore_options() {
         console.log(`error in options.js: ${error}`);
     }
 
-    browser.storage.sync.get().then((result) => {
+    browser.storage.local.get().then((result) => {
         document.getElementById("n_tabs_max-input").value = result.n_tabs_max;
     }, on_error);
 }
