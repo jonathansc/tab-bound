@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "tab-bound",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Enforces a bound on the number of tabs.",
     "icons": {
         "32": "icons/tb32.png"

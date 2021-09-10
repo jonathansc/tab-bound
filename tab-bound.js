@@ -4,7 +4,7 @@ function get_tabs() {
 
 function update_n_tabs() {
     get_tabs().then((tabs) => {
-        document.getElementById("n_tabs").innerHTML = tabs.length;
+        document.getElementById("n_tabs").appendChild(document.createTextNode(tabs.length));
 
         browser.storage.local.get("n_tabs_max").then((result) => {
             if (tabs.length >= result.n_tabs_max) {
@@ -20,7 +20,7 @@ let color_green = "greenyellow";
 let color_red = "red";
 
 browser.storage.local.get("n_tabs_max").then((result) => {
-    document.getElementById("n_tabs_max").innerHTML = result.n_tabs_max;
+    document.getElementById("n_tabs_max").appendChild(document.createTextNode(result.n_tabs_max));
 });
 document.getElementById("status").style.color = color_green;
 document.addEventListener("DOMContentLoaded", update_n_tabs);

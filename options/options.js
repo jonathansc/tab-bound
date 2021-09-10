@@ -1,5 +1,6 @@
 function save_options(e) {
     e.preventDefault();
+    console.log(`set max. number of tabs allowed to ${document.getElementById("n_tabs_max-input").value}`);
     browser.storage.local.set({
         n_tabs_max: document.getElementById("n_tabs_max-input").value
     });
