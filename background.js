@@ -1,7 +1,7 @@
 console.log("background script started")
 
 const DEF_N_TABS_MAX = 10;
-const DEF_ACTIVE = true;
+const DEF_ACTIVE = false;
 
 browser.storage.local.get().then((result) => {
     browser.storage.local.set({
